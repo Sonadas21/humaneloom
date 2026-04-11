@@ -34,7 +34,7 @@ export default function Header() {
                 Products
               </Link>
               <Link 
-                to="/products" 
+                to="/ai-solutions" 
                 className="text-slate-800 hover:text-slate-600 transition-colors text-xs xl:text-sm font-bold whitespace-nowrap"
                 style={{ fontFamily: '"Press Start 2P", monospace' }}
               >
@@ -109,7 +109,7 @@ export default function Header() {
                 Products
               </Link>
               <Link 
-                to="/products" 
+                to="/ai-solutions" 
                 className="text-slate-800 hover:text-slate-600 transition-colors text-sm font-bold py-2 border-b border-slate-100"
                 style={{ fontFamily: '"Press Start 2P", monospace' }}
                 onClick={() => setIsMenuOpen(false)}

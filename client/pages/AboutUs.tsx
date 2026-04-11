@@ -55,9 +55,26 @@ export default function AboutUs() {
             <p className="text-slate-600">Meet the talented individuals who make our success possible</p>
           </div>
 
-          {/* Founders Row (2 Cards) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto justify-center mb-8">
-            {/* Team Member 1 */}
+          {/* Founders Row (3 Cards) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center mb-8">
+            
+            {/* Team Member: Arpan */}
+            <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden relative group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 transform hover:-translate-y-1">
+              <div className="absolute top-0 left-0 w-24 h-1 bg-indigo-300"></div>
+              <div className="p-8 pb-10 flex flex-col items-center text-center mt-4">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-6 shadow-md border-4 border-white object-cover group-hover:shadow-lg transition-all duration-300">
+                  <img src="/members/arpan.png" alt="Arpan" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-1">Arpan</h3>
+                <p className="text-indigo-700 font-medium mb-4 text-sm">Co-founder</p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Driving strategic growth and system architecture.
+                </p>
+              </div>
+            </div>
+            
+            
+            {/* Team Member : shivam */}
             <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden relative group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="absolute top-0 left-0 w-24 h-1 bg-indigo-300"></div>
               <div className="p-8 pb-10 flex flex-col items-center text-center mt-4">
@@ -72,7 +89,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Team Member 2 */}
+            {/* Team Member : Raman */}
             <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden relative group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="absolute top-0 left-0 w-24 h-1 bg-indigo-300"></div>
               <div className="p-8 pb-10 flex flex-col items-center text-center mt-4">
@@ -88,8 +105,8 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Founding Engineers Row (3 Cards) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
+          {/* Founding Engineers Row (4 Cards) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto justify-center">
             {/* Team Member 3 */}
             <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden relative group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 transform hover:-translate-y-1">
               <div className="absolute top-0 left-0 w-24 h-1 bg-indigo-300"></div>
@@ -131,6 +148,21 @@ export default function AboutUs() {
                 <p className="text-indigo-700 font-medium mb-4 text-sm">Founding Engineer</p>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Skilled expert bringing creative solutions to reality.
+                </p>
+              </div>
+            </div>
+
+            {/* Team Member: Anuj */}
+            <div className="bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden relative group hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 transform hover:-translate-y-1">
+              <div className="absolute top-0 left-0 w-24 h-1 bg-indigo-300"></div>
+              <div className="p-8 pb-10 flex flex-col items-center text-center mt-4">
+                <div className="w-32 h-32 rounded-full overflow-hidden mb-6 shadow-md border-4 border-white object-cover group-hover:shadow-lg transition-all duration-300">
+                  <img src="/members/anuj.png" alt="Anuj" className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-1">Anuj</h3>
+                <p className="text-indigo-700 font-medium mb-4 text-sm">Founding Engineer</p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Building highly scalable and robust system backends.
                 </p>
               </div>
             </div>

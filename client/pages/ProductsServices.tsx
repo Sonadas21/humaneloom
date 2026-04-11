@@ -21,10 +21,10 @@ export default function ProductsServices() {
             className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-slate-800 leading-tight mb-8"
             style={{ fontFamily: '"Press Start 2P", monospace' }}
           >
-            Products &<br/> Services
+            Products
           </h1>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-medium">
-            Explore our state-of-the-art suite of AI solutions designed to modernize legacy workflows.
+            Explore our state-of-the-art suite of Products designed to modernize legacy workflows.
           </p>
         </div>
 

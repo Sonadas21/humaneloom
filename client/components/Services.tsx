@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Bot, 
@@ -65,6 +65,17 @@ const services = [
 
 export default function Services() {
   const [hoveredIndex, setHoveredIndex] = useState<number>(0);
+  const [isPaused, setIsPaused] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setHoveredIndex((prev) => (prev + 1) % services.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   return (
     <section className="bg-[#EB6A2A] py-16 sm:py-24 relative overflow-hidden min-h-screen flex flex-col justify-center">
@@ -101,7 +112,11 @@ export default function Services() {
         </div>
 
         {/* Interactive Accordion Layout */}
-        <div className="flex flex-col lg:flex-row gap-2 sm:gap-4 w-full h-[900px] lg:h-[600px] p-2 sm:p-4 rounded-3xl sm:rounded-[2.5rem] bg-black/20 backdrop-blur-xl border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+        <div 
+          className="flex flex-col lg:flex-row gap-2 sm:gap-4 w-full h-[900px] lg:h-[600px] p-2 sm:p-4 rounded-3xl sm:rounded-[2.5rem] bg-black/20 backdrop-blur-xl border border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {services.map((service, index) => {
             const isActive = hoveredIndex === index;
             const Icon = service.icon;
